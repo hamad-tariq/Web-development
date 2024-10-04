@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tech - Lab 4 - Task 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="images/numl.png" alt="numl logo">
+        <h1 id="mainheading">Sign Up form</h1>
+        <h3>_______________________________________________________</h3>
+    </div>
+    <div class="form">
+        <form action="submit" id="signupform">
+            <h2>First Name</h2>
+            <input type="text" name="fname" id="fnm"><br>
+            
+            <h2>Last name</h2>
+            <input type="text" name="lname" id="lnm"><br>
+            
+            <h2>Choose your username</h2>
+            <input type="text" name="usrname" id="usrnm"><br>
+            
+            <h2>Create a password</h2>
+            <input type="password" name="psswd" id="passwd"><br>
+            
+            <h2>Confirm password</h2>
+            <input type="password" name="cpasswd" id="cpass"><br>
+            
+            <h2>Birthday</h2>
+            <select name="month" id="month">
+            <option value="">Month</option>
+            <option value="jan">January</option>
+            <option value="feb">Februry</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="sep">September</option>
+            <option value="oct">October</option>
+            <option value="november">November</option>
+            <option value="dec">December</option>
+            </select>
+            <input type="text" id="day"  placeholder="Day">
+            <input type="text" id="day"  placeholder="Year">
+
+            <h2>Gender</h2>
+            <input type="radio" id="gnd" value="male"><label for="gnd" id="lblgnd">Male</label><br>
+            <input type="radio" name="fm" id="gnd" value="fmale"><label for="gnd" id="lblgnd">Female </label><br>
+            <input type="radio" name="other" id="gnd" value="other"><label for="gnd" id="lblgnd">Other</label><br>
+
+            <h2>Mobile Phone</h2>
+            <input type="text" placeholder="+92" disabled="disabled" id="mbld">
+            <input type="text"> 
+
+            <h2>Country</h2>
+            <select name="country" id="cntry">
+                <option value="">Select Country</option>
+                <option value="pk">Pakistan</option>
+                <option value="us">United States</option>
+                <option value="bngsh">Bangladesh</option>
+                <option value="iran">Iran</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <input type="radio" id="cnst" name="consent"> <label for="cnst" id="lcnst">Yes, I agree with terms and conditions </label><br>
+
+            <button id="sbmtbtn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

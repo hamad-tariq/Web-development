@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web Page with Table and Description List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Web Page with Description List and Table</h1>
+        </header>
+
+        <!-- Description List Section -->
+        <section class="description-section">
+            <h2>About This Page</h2>
+            <dl>
+                <dt><strong>Project Title:</strong></dt>
+                <dd>Web Development Project</dd>
+                <dt><strong>Description:</strong></dt>
+                <dd>This project showcases a simple webpage structure using various HTML elements like tables and description lists, with advanced CSS styling.</dd>
+                <dt><strong>Technologies:</strong></dt>
+                <dd>HTML5, CSS3</dd>
+                <dt><strong>Objective:</strong></dt>
+                <dd>The objective is to demonstrate the use of HTML tables with colspan, rowspan, and colgroup features for layout control.</dd>
+            </dl>
+        </section>
+
+        <!-- Table Section -->
+        <section class="table-section">
+            <h2>Project Team Members</h2>
+            <table>
+                <!-- Column Group -->
+                <colgroup>
+                    <col span="1" style="background-color: #f2f2f2;">
+                    <col span="1" style="background-color: #e6f7ff;">
+                    <col span="1" style="background-color: #e6ffe6;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th rowspan="2">ID</th>
+                        <th colspan="2">Member Details</th>
+                        <th rowspan="2">Role</th>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">1</td>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td rowspan="2">Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">2</td>
+                        <td>Mike Johnson</td>
+                        <td>mike@example.com</td>
+                        <td rowspan="2">Designer</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Davis</td>
+                        <td>emily@example.com</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Team Overview</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
